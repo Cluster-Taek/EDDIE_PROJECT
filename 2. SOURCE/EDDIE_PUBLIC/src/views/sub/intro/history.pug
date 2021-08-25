@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        include ../../template/script.pug
+        link(rel='stylesheet' href='/views/css/sub/sub-common.css')
+        link(rel='stylesheet' href='/views/css/sub/intro/history.css')
+    body
+        .wrapper
+            .header-container
+                include ../../template/header.pug
+            .banner-wrap
+                .banner
+                    .banner-bg
+                        .banner-img
+                        .banner-mask
+                    .page-title
+                        .breadcrumb
+                            ul
+                                li.home
+                                    img(src="/views/img/common/breadcrumb_icon.svg" alt="breadcrumb")
+                                li.arr
+                                    img(src="/views/img/common/arrow_w.svg" alt="icon")
+                                li 회사소개
+                                li.arr
+                                    img(src="/views/img/common/arrow_w.svg" alt="icon")
+                                li 연혁
+                        .title 
+                            h3 연혁
+            
+            .body-container
+                .info-wrap
+                    .history
+                        .title 
+                            span <b>대학</b>은 <b>산업단지</b> 안으로,<b>기업은 대학</b> 속으로<br>경기산학융합원이 걸어온 발자취입니다.
+                        ul
+                            li
+                                span.date 2020.3
+                                p 연혁 하나~~~
+                            li
+                                span.date 2019.10
+                                p 연혁 둘~~~
+                            li
+                                span.date 2019.5
+                                p 연혁 셋~~~
+                            li
+                                span.date 2019.3
+                                p 연혁 넷~~~
+
+
+            script(src="/public/js/app.js")
+
+            include ../../template/footer.pug

@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        include  ../../template/script.pug
+        link(rel='stylesheet' href='/views/css/sub/sub-common.css')
+        link(rel='stylesheet' href='/views/css/sub/intro/map.css')
+    body
+        .wrapper
+            .header-container
+                include ../../template/header.pug
+            .banner-wrap
+                .banner
+                    .banner-bg
+                        .banner-img
+                        .banner-mask
+                    .page-title
+                        .breadcrumb
+                            ul
+                                li.home
+                                    img(src="/views/img/common/breadcrumb_icon.svg" alt="breadcrumb")
+                                li.arr
+                                    img(src="/views/img/common/arrow_w.svg" alt="icon")
+                                li 회사소개
+                                li.arr
+                                    img(src="/views/img/common/arrow_w.svg" alt="icon")
+                                li 찾아오시는 길
+                        .title 
+                            h3 찾아오시는 길
+            
+            .body-container
+                .info-wrap
+                    div.map#map
+    
+            script(src="//dapi.kakao.com/v2/maps/sdk.js?appkey=13a2315d7f6462040ec82a095ba0b248")
+            script(src="/public/js/sub/map.js") 
+            script(src="/public/js/app.js")
+
+            include ../../template/footer.pug

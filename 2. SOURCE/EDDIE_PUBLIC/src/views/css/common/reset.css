@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* 초기화 파일 */
+
+/*여백 초기화*/
+html, body, 
+div, span,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, dl, dt, dd,
+p, address, blockquote, pre, cite,
+form, fieldset, input, textarea, select, button, 
+iframe, table, th, td {margin:0; padding:0; }
+
+/*테두리*/
+table, fieldset, img {border:0 none;}
+
+/*목록*/
+ul, ol, li {list-style-type:none;}
+
+/*테이블*/
+table {border-collapse:collapse;}
+caption, th {text-align:left;}
+th {font-weight:normal;}
+
+/*이미지와 폼 요소 정렬*/
+img {vertical-align:top; }
+label, input, select, textarea, button {vertical-align:middle;}
+
+/*텍스트*/
+strong {font-weight:normal;}
+em, address, cite {font-style:normal;}
+
+/*폼 요소*/
+label, button {cursor:pointer;}
+legend {position:absolute; font-size:0; line-height:0; height:0;}
+
+input, textarea, option, button { font-family: 'Noto Sans KR','Sans-serif'; font-size: 1.3rem; letter-spacing: -0.5px; outline: none; border-radius: 0;}
+input[type=text],input[type=password], textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: 0;  border-radius: 0;}
+select {  font-family: 'Noto Sans KR','Sans-serif'; font-size: 1.3rem; letter-spacing: -0.5px; color: #222; border-radius: 0; webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; }
+textarea { white-space: pre-wrap; }
+
+textarea:focus { outline: none; }
+button:focus { outline: none; }
+input:focus { outline: none; }
+select:focus { outline: none; }
+select::-ms-expand { display: none; }
+
+input::-ms-input-placeholder { color: #ccc; }
+input::-webkit-input-placeholder { color: #ccc; } 
+input::-moz-placeholder { color: #ccc; }
+textarea::-ms-input-placeholder { color: #ccc; }
+textarea::-webkit-input-placeholder { color: #ccc; } 
+textarea::-moz-placeholder { color: #ccc; }

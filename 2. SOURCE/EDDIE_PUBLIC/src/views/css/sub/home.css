@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* home.pug CSS */
+
+/* banner-wrap */
+.body-container .banner-wrap { position: relative; min-width: 1200px; height: calc(100vh - 120px); width: 100%; white-space: nowrap; overflow: hidden; }
+
+.body-container .banner-wrap .banner-text-wrap { width: 1200px; margin: 0 auto; position: absolute; top: 60%; left: 50%; color: #fff; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%);} 
+.body-container .banner-wrap .banner-text-wrap .sub-title { color: #ccc; font-size: 35pt; font-weight: normal; }
+.body-container .banner-wrap .banner-text-wrap .title { color: #fff; font-size: 45pt; font-weight: lighter; }
+
+.body-container .banner-wrap .banner-button { width: 1200px; margin: 0 auto; position: absolute; top: 85%; left: 50%; color: #fff; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); text-align: center; }
+.body-container .banner-wrap .banner-button > a { font-size: 1.75rem; color: #fff; width: 200px; line-height: 50px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.3); display: block; margin: 35px auto 0; -webkit-transition: background .3s; -moz-transition: background .3s; -ms-transition: background .3s; -o-transition: background .3s; transition: background .3s; }
+.body-container .banner-wrap .banner-button > a:hover { background: rgba(255,255,255,0);}
+
+/* info-wrap */
+.body-container .info-wrap { text-align: center; padding: 3%; width: 100%; background-color: #fcfcff;}
+.body-container .info-wrap.portfolio { background-color: #f0f0ff; }
+.body-container .info-wrap .title { font-weight: bold; font-size: 3rem; }
+.body-container .info-wrap .sub-title { font-size: 2rem; }
+.body-container .info-wrap .info-list { width: 65%; margin: 0 auto; }
+.body-container .info-wrap .info-list > ul { margin-right: 40px; margin-top: 30px; }
+.body-container .info-wrap .info-list > ul > li { float: left; margin-left: 40px; width: calc(25% - 40px); margin-top: 40px; text-align: center; }
+.body-container .info-wrap .info-list > ul > li > a > .img { position: relative; border: 1px solid #dfdfdf; padding: 9px; transition: transform 0.3s; }
+.body-container .info-wrap .info-list > ul > li > a > .img:hover { transform:scale(1.05); -webkit-transform:scale(1.05); -moz-transform:scale(1.05); -o-transform:scale(1.05); }
+.body-container .info-wrap .info-list > ul > li > a > .img > img { width: 100%; height: 100%; object-fit: cover; }
+.body-container .info-wrap .info-list > ul > li > a .info-title { font-size: 1.5rem; font-weight: bold; margin-top: 7px; }
+.body-container .info-wrap .info-list > ul > li > a .info-sub-title { font-size: 1.4rem; margin-top: 2px; }

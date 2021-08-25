@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* ****************** default css ****************** */
+/* reset css */
+@import url("common/common.css");
+
+
+
+/* ****************** style ****************** */
+
+/* 단계 */
+.step ul li { float: left; width: 50%; text-align: center; font-size: 1.6rem; padding: 40px 0 20px; font-weight: 600; border-bottom: 2px solid #eee; color: #999;}
+.step ul li.act { color: #f4aa04; border-color: #f4aa04; }
+.step ul li span { display: block; font-size: 2.2rem; }
+@media all and (max-width: 768px) {
+	.step ul li { font-size: 1.4rem; }
+	.step ul li span { font-size: 1.7rem; }
+}
+.noti { font-size: 1.4rem; padding-top: 10px; color: #555; font-weight: 600; }
+.noti span { color: #f4aa04; }
+
+/* 타입선택 */
+.type-select { text-align: center; padding: 60px 0 40px; }
+.type-select .box { display: inline-block; width: 25%; padding: 50px 0; border: 1px solid #eee; border-radius: 20px; margin: 0 15px; font-size: 1.5rem; font-weight: 500; cursor: pointer; color: #777; }
+.type-select .box img { height: 55px; display: block; margin: 0 auto 15px; }
+.type-select .box:hover,
+.type-select .box.act { border-color: #f4aa04; color: #f4aa04; }
+@media all and (max-width: 768px) {
+	.type-select { padding: 30px 0 10px; }
+	.type-select:after { content: ''; display: block; clear: both; }
+	.type-select .box { float: left; width: 31%; margin: 0 1%; padding: 30px 0; }
+	.type-select .box img { height: 45px; }
+}
+
+.date-select .calendar { position: relative; float: left; width: 120px; }
+.date-select .calendar input[type="text"].text-input { width: 100%; padding-right: 30px; cursor: pointer; }
+.date-select .calendar img { position: absolute; top: 10px; right: 10px; width: 17px; }
+.date-select .uni { float: left; margin-left: 10px; position: relative; top: 7px;}
+.date-select .select-box { float: left; width: 100px; height: 35px; margin-left: 10px; margin-bottom: 0; }
+.date-select .select-box select { background-position: 93%; }
+@media all and (max-width: 580px) { 
+	.date-select .calendar { width: 100%; }
+	.date-select .select-box { width: 47%; margin-left: 0; margin-top: 5px; }
+	.date-select .uni { width: calc(6% - 10px); margin: 0 5px; top: 12px; text-align: center; }
+}
+
+
+.term-wrap { position: relative; width: 100%; }
+.term-wrap .term {border: 1px solid #e1e1e1; border-bottom: 0; }
+.term-wrap .term .row .box-title { border-bottom: 1px solid #e1e1e1; padding: 5px 20px; position: relative; font-size: 1.4rem;}
+.term-wrap .term .row .box-title img.arr { position: absolute; top: 10px; right: 20px; cursor: pointer; }
+.term-wrap .term .row.on .box-title img.arr { transform: rotate(180deg); }
+.term-wrap .term .row .box-cont { display: none; height: 100px; overflow-y: auto; background: #f8f8f8; border-bottom: 1px solid #e1e1e1; }
+.term-wrap .term .row.on .box-cont { display: block; }
+.term-wrap .term .row .box-cont p { padding: 10px; white-space: pre-wrap; font-size: 1.3rem; font-weight: 300; color: #555; }
+.term-wrap .sign { float: left; width: 330px; margin-left: 20px; line-height: 195px; border: 1px solid #e1e1e1; background: #f1f1f1; text-align: center; font-size: 1.5rem; color: #999; }
+@media all and (max-width: 768px) {
+	.term-wrap .term { width: 100%; margin-bottom: 20px; }
+	.term-wrap .sign { width: 100%; margin-left: 0; }
+}
+
+.survey-wrap { padding-bottom: 50px; }
+.survey-wrap .survey > .row { margin-top: 30px; }
+.survey-wrap .survey > .row .head { font-size: 1.4rem; font-weight: 600; padding-bottom: 10px; }
+.survey-wrap .survey > .row ul { display: table; table-layout: fixed; width: 100%; border: 1px solid #dee3eb; border-right: 0;}
+.survey-wrap .survey > .row ul li { display: table-cell; vertical-align: middle; width: 21%; text-align: center; border-right: 1px solid #dee3eb; line-height: 15px; padding: 10px 0; font-size: 1.3rem; word-break: keep-all; }
+.survey-wrap .survey > .row ul li:hover,
+.survey-wrap .survey > .row ul li.select { background: #333; color: #fff; }
+.survey-wrap .survey .term-wrap { margin-top: 30px; }
+.survey-wrap .survey .term-wrap .term { float: none; border: 0; padding: 0; }
+.survey-wrap .survey .term-wrap input[type=checkbox]:not(old) + label { line-height: 1.5; background-position: 0 3px; }
+
+.page-title { font-size: 1.8rem; font-weight: 600; text-align: center; padding: 15px 0; border-top: 1px solid #333; border-bottom: 1px solid #dee3eb; margin: 30px 0;}
+.page-title >p { font-size: 1.4rem; font-weight: 400; padding-top: 7px; color: #777; }

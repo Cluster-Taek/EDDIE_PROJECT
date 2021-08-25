@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+    head
+        include ./template/script.pug
+        link(rel='stylesheet' href='/views/css/sub/home.css')
+    body
+        .wrapper
+            .header-container
+                include ./template/header.pug
+
+            .banner-bg
+                .banner-img
+                .banner-mask
+
+            .body-container
+                .banner-wrap
+                    .banner-text-wrap
+                        .sub-title
+                            p VIDEO TO MUSIC
+                        .title
+                            p 
+                                <b>저작권</b>이 없는 <b>음원 추천</b> 서비스
+                            p 
+                                b EDDIE
+                    .banner-button
+                        a(href='/community/question/questionList.hs') 음원 추천받기
+                .info-wrap 
+                    .title CH PRODUCT
+                    .sub-title 제품 소개
+                    .info-list
+                        ul 
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-01.jpg' alt='에어샤워')
+                                    .info-title
+                                        p AIR-SHOWER
+                                    .info-sub-title
+                                        p 에어샤워 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-02.jpg' alt='크린부스')
+                                    .info-title
+                                        p CLEAN-BOOTH 
+                                    .info-sub-title
+                                        p 크린부스 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-03.jpg' alt='크린룸 장비')
+                                    .info-title
+                                        p CLEAN-ROOM EQUIPMENT 
+                                    .info-sub-title
+                                        p 크린룸 장비 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-04.jpg' alt='크린룸')
+                                    .info-title
+                                        p CLEAN-ROOM 
+                                    .info-sub-title
+                                        p 크린룸 사업부
+                .info-wrap.portfolio 
+                    .title CH PORTFOLIO
+                    .sub-title 시공 실적
+                    .info-list
+                        ul 
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-01.jpg' alt='에어샤워')
+                                    .info-title
+                                        p AIR-SHOWER
+                                    .info-sub-title
+                                        p 에어샤워 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-02.jpg' alt='크린부스')
+                                    .info-title
+                                        p CLEAN-BOOTH 
+                                    .info-sub-title
+                                        p 크린부스 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-03.jpg' alt='크린룸 장비')
+                                    .info-title
+                                        p CLEAN-ROOM EQUIPMENT 
+                                    .info-sub-title
+                                        p 크린룸 장비 사업부
+                            li
+                                a(href='/intro/intro/introInfo.hs')
+                                    .img
+                                        img(src='/views/img/main/product-04.jpg' alt='크린룸')
+                                    .info-title
+                                        p CLEAN-ROOM 
+                                    .info-sub-title
+                                        p 크린룸 사업부
+
+            include ./template/footer.pug
+
+            script(src="/public/js/app.js")
